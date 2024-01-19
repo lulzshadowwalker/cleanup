@@ -6,6 +6,7 @@
 # yaml-language-server: $schema=https://goreleaser.com/static/schema.json
 # vim: set ts=2 sw=2 tw=0 fo=cnqoj
 
+project_name: flutter_cleanup
 version: 1
 
 before:
@@ -20,6 +21,17 @@ builds:
       - linux
       - windows
       - darwin
+
+release:
+  github:
+    name: flutter_cleanup
+    owner: lulzshadowwalker
+
+brews:
+  - name: flutter_cleanup
+  - repository:
+      name: flutter_cleanup
+      owner: lulzshadowwalker
 
 archives:
   - format: tar.gz
