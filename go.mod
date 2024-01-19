@@ -1,3 +1,3 @@
-module github.com/lulzshadowwalker/cleanup
+module github.com/lulzshadowwalker/flutter_cleanup
 
 go 1.21.1
